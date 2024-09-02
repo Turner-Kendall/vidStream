@@ -1,0 +1,314 @@
+a,
+p,
+form,
+input,
+label,
+select,
+button,
+textarea,
+h1,h2,h3,h4,h5,h6,
+ul,li{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1, h2, h4 h6{
+  margin: 0.5rem;
+}
+
+h3{
+  margin: 0 0.5rem;
+}
+
+a.upload-video{
+  display: inline-block;
+  background-color: #efedfa;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #1e033a;
+  text-align: center;
+  white-space: nowrap;
+}
+
+a.upload-video:hover{
+  background-color: #1b3cd1;
+  color: #FFFFFF!important;
+  }
+
+a{
+	text-decoration: none;
+  color:#1e033a;
+  font-weight: 600;
+}
+
+.container{
+  margin: 0 auto;
+}
+
+ul
+{
+	line-height:1;
+	font-size:16px;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+  position: relative;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	padding: 20px 10px;
+	margin: 10px 5px;
+  background-color: #f5f5f5;
+	color:#8a97a0;
+	font-size: 18px;
+	font-style: normal;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+li:hover{
+  background-color: #efedfa;
+}
+
+li img{
+	border-radius: .33rem;
+	height: 64px;
+  margin-right: 15px;
+}
+
+ul.tags li {
+  display: inline;
+  background-color: #ffffff;
+  color: #1e033a;
+  padding: 0.25rem 0.5rem;
+  margin: 0 0 0.5rem 0;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  }
+
+  .small{
+  color: 12px!important;
+  }
+
+label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+/* Remove the stupid outer glow in Webkit */
+input:focus
+{
+	outline:0;
+  background: #d2d9dd;
+}
+
+
+input,
+textarea
+{
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+}
+
+fieldset{
+	border: none;
+}
+
+legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+
+/* These elements are usually rendered a certain way by the browser */
+
+
+form {
+  max-width: 600px;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+}
+
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select
+{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+select{
+	-webkit-appearance: menulist-button;
+	height:35px;
+}
+
+/* Text Inputs
+-----------------------------------------------*/
+
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=range],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week]
+{
+  background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+
+/* Button Controls
+-----------------------------------------------*/
+
+input[type=checkbox],
+input[type=radio]
+{
+	width:13px;
+	height:13px;
+}
+
+/* File Uploads
+-----------------------------------------------*/
+
+input[type=file]
+{
+	width:auto;
+  position: relative;
+	display: block;
+	padding: 20px;
+	margin: 0 auto;
+  background-color: #e8eeef;
+	color:#8a97a0;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+
+/* Search Input
+-----------------------------------------------*/
+
+/* Make webkit render the search input like a normal text field */
+input[type=search]
+{
+	-webkit-appearance:textfield;
+	-webkit-box-sizing:content-box;
+}
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration
+{
+	display:none;
+}
+
+/* Buttons
+-----------------------------------------------*/
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"]
+{
+	/* Fix IE7 display bug */
+	overflow:visible;
+	width:auto;
+  position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #d7d7d7;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+
+button:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover
+{
+  background-color: #16a085;
+}
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button
+{	
+	padding:0;
+	border:0;
+	background:none;
+}
+
+/* Textarea
+-----------------------------------------------*/
+
+textarea 
+{
+	/* Move the label to the top */
+	vertical-align:top;
+	
+	/* Turn off scroll bars in IE unless needed */
+	overflow:auto;
+}
+
+/* Selects
+-----------------------------------------------*/
+
+select
+{
+
+}
+
+select[multiple] 
+{
+	/* Move the label to the top */
+	vertical-align:top;
+}
+
+
+p.description {
+  font-size: 16px;
+  font-style: normal;
+  margin: 10px 0;
+  display:block;
+  }

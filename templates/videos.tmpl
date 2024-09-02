@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Vidstrem</title>
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+    <body>
+        <section class="container">
+            <h1> {{ .title }}</h1>
+            <h3> {{ .subTitle }}</h3>
+            <a href="/videoUpload" class="upload-video">You can upload videos here</a>
+            <ul>
+            {{range .videos}}
+              <li id="{{.ID}}">
+                  <img src="/assets/images/{{.Thumbnail}}">
+                  <article>
+                      <a href="/stream/{{.Filename}}" class="title">{{.Title}}</a>
+                      <span class="small">by {{.Creator}} on {{.Timestamp}}</span>
+                      <p class="description">{{.Description}}</p>
+                      <ul class="tags">
+                        {{range .Tags}}
+                        <li>{{.}}</li>
+                        {{end}}
+                    </ul>
+                  </article>
+              </li>
+              {{end}}
+            </ul>
+        </section>
+    </body>
+</html>

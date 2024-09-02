@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Vidstrem Upload</title>
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+    <body>
+      <section class="container">
+        <div>
+          <p>Upload single video w/ metadata</p>
+          <form action="/upload" method="post" enctype="multipart/form-data"></form>
+          <label for="category">Category:</label>
+
+          <select id="category" name="category">
+            {{range .data}}
+                <option value="{{.}}">{{.}}</option>
+            {{end}}
+        </select>
+            
+                Title: <input type="text" name="name"><br>
+                Creator: <input type="email" name="email"><br>
+                Description: <input type="text" name="description"><br>
+                Video: <input type="file" name="file"><br>
+                
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+      </section>
+    </body>
+</html>
